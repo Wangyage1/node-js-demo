@@ -10,7 +10,7 @@ fs.stat('target.txt', (err, stat) => {
         return;
     }
 
-    fs.watch('target.txt', (eventType, filename) => {
+    fs.watch('target.txt', () => {
     
         console.log('file changed!');
     })
